@@ -10,11 +10,11 @@ dato, openingtime, closingtime, highest_price, lowest_price, closing_price, volu
 
 ### utforskning
 
-Nordnet api:
-https://www.nordnet.no/api/2/accounts/1/performance/aggregated?include_today=true&from=2019-01-01
-https://www.nordnet.no/api/2/accounts/1/performance/aggregated?include_today=true&from=2018-11-15
-https://www.nordnet.no/api/2/accounts/1/performance/aggregated?include_today=true&from=2016-11-15
-https://www.nordnet.no/api/2/instruments/historical/yields/16801605?from=2009-11-17 
+Nordnet api:  
+https://www.nordnet.no/api/2/accounts/1/performance/aggregated?include_today=true&from=2019-01-01  
+https://www.nordnet.no/api/2/accounts/1/performance/aggregated?include_today=true&from=2018-11-15  
+https://www.nordnet.no/api/2/accounts/1/performance/aggregated?include_today=true&from=2016-11-15  
+https://www.nordnet.no/api/2/instruments/historical/yields/16801605?from=2009-11-17   
 
 Webscraper-chrome extension:
 https://webscraper.io/
