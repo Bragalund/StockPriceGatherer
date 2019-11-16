@@ -25,7 +25,7 @@ python bibliotek for å lage webcrawler.
 
 For fetching all headlines on aftenposten.no use this command within the virtualenvironment: 
 
-´´´()
-scrapy crawl aftenposten -o overskrifter.json
-´´´
+´´´()  
+scrapy crawl aftenposten -o overskrifter.json  
+´´´  
 
