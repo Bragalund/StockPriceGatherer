@@ -1,7 +1,7 @@
 import scrapy
 
 
-class NordnetSpider(scrapy.Spider):
+class AftenpostenSpider(scrapy.Spider):
     name = 'aftenposten'
     start_urls = ['https://www.aftenposten.no']
 

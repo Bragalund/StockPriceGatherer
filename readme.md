@@ -1,4 +1,4 @@
-# Stock Price Gatherer
+# Stock Price Gatherer  and testprojects
 
 Project for gathering stock-related data and storing it in a influx-database(time seriaes database).
 
@@ -23,9 +23,22 @@ Scrapy:
 https://scrapy.org/
 python bibliotek for å lage webcrawler.
 
+## Testprosjekt
+
 For fetching all headlines on aftenposten.no use this command within the virtualenvironment: 
 
 ´´´()  
+cd vitual_python_env/aftenpostentestproject
 scrapy crawl aftenposten -o overskrifter.json  
 ´´´  
+
+## nordnetscaper
+
+For å sette opp scraper-prosjekt med scrapy:
+NB! Dette burde gjøres inne i et python virtual-environment.
+
+```()
+scrapy startproject nordnetscraper
+```
+
 
