@@ -8,7 +8,7 @@
 import scrapy
 
 
-class NordnetscraperItem(scrapy.Item):
+class Nordnet2Item(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass

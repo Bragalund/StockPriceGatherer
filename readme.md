@@ -32,13 +32,23 @@ cd vitual_python_env/aftenpostentestproject
 scrapy crawl aftenposten -o overskrifter.json  
 ```
 
-## nordnetscaper
 
-For å sette opp scraper-prosjekt med scrapy:
-NB! Dette burde gjøres inne i et python virtual-environment.
+
+## for å sette opp scrapy prosjekt
+
+Dette burde gjøres inne i et python virtual-environment.
+For å installere og sette opp virtualenvironment:
+
+```()
+pip3 install virtualenv
+python3 -m venv myVirtualEnvironment
+cd myVirtualEnv
+```
 
 ```()
 scrapy startproject nordnetscraper
+cd nordnetscraper/
+scrapy genspider nordnetspider nordnet.no
 ```
 
 

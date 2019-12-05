@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for nordnetscraper project
+# Scrapy settings for nordnet2 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'nordnetscraper'
+BOT_NAME = 'nordnet2'
 
-SPIDER_MODULES = ['nordnetscraper.spiders']
-NEWSPIDER_MODULE = 'nordnetscraper.spiders'
+SPIDER_MODULES = ['nordnet2.spiders']
+NEWSPIDER_MODULE = 'nordnet2.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'nordnetscraper (+http://www.yourdomain.com)'
+#USER_AGENT = 'nordnet2 (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -47,17 +47,14 @@ COOKIES_ENABLED = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'nordnetscraper.middlewares.NordnetscraperSpiderMiddleware': 543,
+#    'nordnet2.middlewares.Nordnet2SpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-    'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
-}
-
-# USER_AGENT_LIST = "useragents.txt"
+#DOWNLOADER_MIDDLEWARES = {
+#    'nordnet2.middlewares.Nordnet2DownloaderMiddleware': 543,
+#}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -68,14 +65,14 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'nordnetscraper.pipelines.NordnetscraperPipeline': 300,
+#    'nordnet2.pipelines.Nordnet2Pipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-#AUTOTHROTTLE_START_DELAY = 5
+AUTOTHROTTLE_START_DELAY = 6
 # The maximum download delay to be set in case of high latencies
 #AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
