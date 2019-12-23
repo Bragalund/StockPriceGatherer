@@ -9,7 +9,7 @@ class Nordnetspider2Spider(scrapy.Spider):
                   'https://www.nordnet.no/market/stocks?sortField=diff_pct&sortOrder=desc&page=3&exchangeCountry=NO']
 
     def parse(self, response):
-        for name in response.xpath("//div[@data-title='Navn']/span/a/text()"):
-            yield {
-                'stockname': name.get()
+        for stockline in response.xpath("//tbody/tr/td[@data-title='Navn']/a"):
+            yield{
+                'stockname': stockline.xpath("text()").get()
             }
