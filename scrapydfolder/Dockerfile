@@ -28,6 +28,6 @@ RUN apk add --no-cache ${RUNTIME_PACKAGES} ${BUILD_PACKAGES} && \
 
 ADD ./scrapyd.conf /etc/scrapyd/
 
-EXPOSE 6800
+# EXPOSE 6800
 
 CMD ["scrapyd"]
