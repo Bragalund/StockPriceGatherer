@@ -1,0 +1,6 @@
+version: '3'
+services:
+  scrapyd:
+    build: "scrapydfolder"
+    ports:
+      - "6800:6800"
