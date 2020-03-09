@@ -1,6 +1,6 @@
 version: '3'
 services:
   scrapyd:
-    build: "scrapydfolder"
+    build: "scrapeydserver"
     ports:
       - "6800:6800"

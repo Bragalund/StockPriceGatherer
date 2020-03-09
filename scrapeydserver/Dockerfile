@@ -28,7 +28,7 @@ RUN apk add --no-cache ${RUNTIME_PACKAGES} ${BUILD_PACKAGES} && \
 
 ADD ./scrapyd.conf /etc/scrapyd/
 ADD ./scrapyd.conf scrapyd.conf
-ADD ./scrapyd.conf ~/.scrapyd.conf
+ADD ./scrapyd.conf ~scrapyd.conf
 
 # EXPOSE 6800
 

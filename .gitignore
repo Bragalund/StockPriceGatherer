@@ -264,3 +264,4 @@ vitual_python_env/nordnet2/aftenposten.json
 vitual_python_env/nordnet2/nordnet.json
 vitual_python_env/nordnet2/*.json
 venv/stockpricescraper/*.json
+*.numbers
